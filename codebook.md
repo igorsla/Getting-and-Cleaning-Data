@@ -1,4 +1,6 @@
+
 CodeBook
+
 This code book describes all the variables and summaries calculated, along with units, and any other relevant information.
 
 Source
@@ -19,17 +21,26 @@ For each record in the dataset it is provided:
 Data
 
 The dataset includes the following files:
-•	‘subject_train’ & subject_test - Volunteers who performed activity. 
-•	'features_info.txt' - Variables used with the feature vector.
-•	'features.txt' – Features .
-•	'activity_labels.txt' - Links labels with their activity name.
-•	'train/X_train.txt' - Training set.
-•	'train/y_train.txt' - Training labels.
-•	'test/X_test.txt' - Test set.
-•	'test/y_test.txt' -Test labels.
+•	‘subject_train’ & subject_test - Volunteers who performed activity
+
+•	'features_info.txt' - Variables used with the feature vector
+
+•	'features.txt' – Features
+
+•	'activity_labels.txt' - Links labels with their activity name
+
+•	'train/X_train.txt' - Training set
+
+•	'train/y_train.txt' - Training labels
+
+•	'test/X_test.txt' - Test set
+
+•	'test/y_test.txt' - Test labels
 
 Data transformation
+
 Transformation requirements are the following:
+
 1.	Merges the training and the test sets to create one data set.
 2.	Extracts only the measurements on the mean and standard deviation for each measurement.
 3.	Uses descriptive activity names to name the activities in the data set
@@ -37,11 +48,12 @@ Transformation requirements are the following:
 5.	Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 How run_analysis.R implemented:
-•	Require dplyr library
-•	Load the features and activity labels
-•	Loads test and training data
-•	Merges test and training data
-•	Extract the mean and standard deviation columns
-•	Adds activity labels
-•	Creates new data set of mean variables by subject and activity
-•	Exports new data set to file
+
+1.	Require dplyr library
+2.	Load the features and activity labels
+3.	Loads test and training data
+4.	Merges test and training data
+5.	Extract the mean and standard deviation columns
+6.	Adds activity labels
+7.	Creates new data set of mean variables by subject and activity
+8.	Exports new data set to file
